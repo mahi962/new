@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head> <title> JS bulb
+
+    </title>
+
+<style>
+body {
+  background-image: url("https://th.bing.com/th/id/R.6c8db33ef52dd20c2981ee8b36704f23?rik=0yjfwthRUXYNdA&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f56feae0ab6aa60ebb6039bf3%2ft%2f56feb2e374e8d6373306ab6f%2f1459534802826%2foff-and-on-bulb.jpg&ehk=JInMTkQdWqoJgjXMyvetxFf06oi0nGnzuYSCagxPBpU%3d&risl=&pid=ImgRaw&r=0");
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <br>
+    <br> <br>
+
+   <center> <h1 style="color: rgb(98, 13, 52);">BULB(ON/OFF) </h1> </center>
+   
+    <center> 
+
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+</center>
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+
+</body>
+</html>
